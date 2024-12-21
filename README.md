@@ -19,42 +19,26 @@ This repository contains the implementation of various computer vision algorithm
 ### Prewitt
 The Prewitt edge detection algorithm uses convolution masks to compute gradients in both horizontal and vertical directions, calculating the magnitude of the gradients to identify edges.
 
-![Prewitt Implementation](images/prewitt_implementation.png)
-
 ### Kirsch
 The Kirsch edge detection algorithm uses eight convolution masks oriented at 45-degree intervals to capture gradients in different directions and identify edges.
-
-![Kirsch Implementation](images/kirsch_implementation.png)
 
 ### Marr-Hildreth
 The Marr-Hildreth algorithm applies a Gaussian filter followed by the Laplacian and zero-crossing operation to detect edges.
 
-![Marr-Hildreth Implementation](images/marr_hildreth_implementation.png)
-
 ### Canny
 The Canny edge detection algorithm uses a multi-stage process involving Gaussian filtering, gradient calculation, non-maximum suppression, and double thresholding to detect edges.
-
-![Canny Implementation](images/canny_implementation.png)
 
 ## Color Segmentation
 Color segmentation is performed by converting the image to HSV color space and using k-means clustering to segment the image into different regions.
 
-![Color Segmentation Implementation](images/color_segmentation_implementation.png)
-
 ## Texture-based Segmentation
 Texture-based segmentation involves creating a bank of Gabor filters and convolving them with the original image, followed by k-means clustering based on the detected textures.
-
-![Texture-based Segmentation Implementation](images/texture_segmentation_implementation.png)
 
 ## Histogram of Oriented Gradients (HOG)
 The HOG algorithm computes image descriptors by dividing the image into small cells, computing gradients, and quantizing them into orientation bins.
 
-![HOG Implementation](images/hog_implementation.png)
-
 ## SIFT Algorithm for Scene Stitching
 The SIFT algorithm is used for scene stitching by detecting keypoints, computing descriptors, matching descriptors between images, estimating perspective transformation, and blending the images to create a panorama.
-
-![Scene Stitching Implementation](images/scene_stitching_implementation.png)
 
 ## Results
 ### Edge Detection
